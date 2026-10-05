@@ -1,395 +1,405 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>星のや | 大人の隠れ宿</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <div class="menu">
+      <div class="menu-image">
+        <img src="images/hamburger_view.jpg" alt="外観" />
+      </div>
 
-        <div class="menu-image">
-        <img src="images/hamburger_view.jpg" alt="外観">
-    </div>
-
-     <nav class="menu-nav">
+      <nav class="menu-nav">
         <p class="menu-label">Content</p>
         <ul class="menu-list">
-            <li><a href="#top">トップページ<small>Top</small></a></li>
-            <li><a href="#about">宿について<small>About</small></a></li>
-            <li><a href="#room">お部屋<small>Room</small></a></li>
-            <li><a href="#meal">お食事<small>Restaurant</small></a></li>
-            <li><a href="#onsen">お風呂<small>Hot Spring</small></a></li>
-            <li><a href="#news">お知らせ<small>News</small></a></li>
+          <li>
+            <a href="#top">トップページ<small>Top</small></a>
+          </li>
+          <li>
+            <a href="#about">宿について<small>About</small></a>
+          </li>
+          <li>
+            <a href="#room">お部屋<small>Room</small></a>
+          </li>
+          <li>
+            <a href="#meal">お食事<small>Restaurant</small></a>
+          </li>
+          <li>
+            <a href="#onsen">お風呂<small>Hot Spring</small></a>
+          </li>
+          <li>
+            <a href="#news">お知らせ<small>News</small></a>
+          </li>
         </ul>
-    </nav>
+      </nav>
 
-
-    <div class="menu-info">
-
-    <button class="menu-close" aria-label="メニューを閉じる"></button>
-
-     <p class="menu-catch">自然に抱かれ、心休まる湯宿。</p>
+      <div class="menu-info">
+        <button class="menu-close" aria-label="メニューを閉じる"></button>
+        <p class="menu-catch">自然に抱かれ、心休まる湯宿。</p>
         <p class="menu-logo">
-            <img src="images/logo.png" alt="ロゴ">
-            星のや<span>— 湯ノ杜 —</span>
+          <img src="images/logo.png" alt="ロゴ" />
+          星のや<span>— 湯ノ杜 —</span>
         </p>
 
-          <p class="menu-access-title">Access</p>
+        <p class="menu-access-title">Access</p>
         <address class="menu-address">
-            〒879-5102<br>
-            大分県由布市湯布院町川上 2178-1
+          〒879-5102<br />
+          大分県由布市湯布院町川上 2178-1
         </address>
         <a href="#" class="menu-map">Google Maps ↗</a>
+        <div class="menu-buttons">
+          <a href="#" class="menu-btn">宿泊予約<span>›</span></a>
+          <a href="#" class="menu-btn">宿泊キャンセル<span>›</span></a>
+        </div>
+      </div>
+    </div>
 
-         <div class="menu-buttons">
-            <a href="#" class="menu-btn">宿泊予約<span>›</span></a>
-            <a href="#" class="menu-btn">宿泊キャンセル<span>›</span></a>
+    <main>
+      <section class="first-view">
+        <h1 class="logo">
+          <img src="images/logo.png" alt="星のや" class="logo1" />
+        </h1>
+
+        <div class="header-menu">
+          <span class="language">Language<span class="arrow">▾</span></span>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+          </button>
         </div>
 
-    </div>
-    </div>
+        <div class="catch-copy">
+          <p>静寂と灯りに包まれる</p>
+          <p>大人の隠れ家</p>
+        </div>
+      </section>
 
-<main>
-    <section class="first-view">
-    <h1 class="logo">
-        <img src="images/logo.png" alt="星のや" class="logo1">
-    </h1>
+      <form class="search-form-inner">
+        <div class="search-form-item">
+          <label for="check-in">チェックイン</label>
+          <select id="check-in" name="check-in" class="select">
+            <option value="2026-02-24">2026/2/24</option>
+            <option value="2026-02-26">2026/2/26</option>
+            <option value="2026-02-28">2026/2/28</option>
+          </select>
+        </div>
 
-    <div class="header-menu">
-        <span class="language">Language<span class="arrow">▾</span></span>
-        <button class="hamburger">
-            <span></span>
-            <span></span>
-        </button>
-    </div>
+        <div class="search-form-item">
+          <label for="nights">泊数</label>
+          <select id="nights" name="nights" class="select">
+            <option value="1">1泊</option>
+            <option value="2">2泊</option>
+            <option value="3">3泊</option>
+          </select>
+        </div>
 
-    <div class="catch-copy">
-        <p>静寂と灯りに包まれる</p>
-       <p> 大人の隠れ家</p>
-    </div>
-    </section>
+        <div class="search-form-item">
+          <label for="rooms">室数</label>
+          <select id="rooms" name="rooms" class="select">
+            <option value="1">1室</option>
+            <option value="2">2室</option>
+            <option value="3">3室</option>
+          </select>
+        </div>
 
-   <div class="search-form-inner">
+        <div class="search-form-item">
+          <label for="people">大人</label>
+          <select id="people" name="people" class="select">
+            <option value="1">1人</option>
+            <option value="2">2人</option>
+            <option value="3">3人</option>
+          </select>
+        </div>
 
-   <div class="search-form-item">
-    <label for="check-in">チェックイン</label>
-     <select id="check-in" name="check-in" class="select">
-      <option value="2026-02-24">2026/2/24</option>
-      <option value="2026-02-26">2026/2/26</option>
-      <option value="2026-02-28">2026/2/28</option>
-    </select>
-  </div>
+        <div class="search-form-item">
+          <button type="submit" class="button">空室検索</button>
+        </div>
+      </form>
 
-  <div class="search-form-item">
-    <label for="nights">泊数</label>
-    <select id="nights" name="nights" class="select">
-      <option value="1">1泊</option>
-      <option value="2">2泊</option>
-      <option value="3">3泊</option>
-    </select>
-  </div>
+      <section class="overview">
+        <div class="overview-head">
+          <p class="overview-en">Overview</p>
+          <h2 class="overview-ja">星のや 湯ノ杜</h2>
+        </div>
+        <div class="overview-image">
+          <img src="images/front.png" alt="フロント" />
+        </div>
+        <h3 class="overview-heading">月灯りと湯に包まれる贅沢</h3>
 
-  <div class="search-form-item">
-    <label for="rooms">室数</label>
-    <select id="rooms" name="rooms" class="select">
-      <option value="1">1室</option>
-      <option value="2">2室</option>
-      <option value="3">3室</option>
-    </select>
-  </div>
+        <p class="overview-text">
+          山あいの豊かな自然に囲まれ、日常の喧騒を忘れてゆったりとした時間を過ごせる場所です。<br />
+          春には新緑、夏には青々とした木々、秋には美しい紅葉、冬には澄んだ空気と静かな景色など、四季折々の表情を楽しむことができます。
+        </p>
 
-  <div class="search-form-item">
-    <label for="people">大人</label>
-    <select id="people" name="people" class="select">
-      <option value="1">1人</option>
-      <option value="2">2人</option>
-      <option value="3">3人</option>
-    </select>
-  </div>
+        <p class="overview-text">
+          自然あふれる田舎の原風景と心地よい空間が広がり、訪れる人々に特別な体験をお届けします。
+        </p>
 
-  <div class="search-form-item">
-  <button type="submit" class="button">空室検索</button>
-  </div>
+        <a href="#" class="more-link"
+          >詳しくはこちら <span class="link-arrow">→</span></a
+        >
+      </section>
 
-</div>
+      <section class="room">
+        <div class="room-side">
+          <div class="room-labels">
+            <h2 class="room-ja">お部屋</h2>
+            <p class="room-en">Room</p>
+          </div>
+        </div>
 
-<section class="overview">
-    <div class="overview-head">
-    <p class="overview-label">Overview</p>
-    <h2 class="overview-title">
-        <span class="bar"></span>星のや 湯ノ杜
-    </h2>
-</div>
-    <div class="overview-image">
-        <img src="images/front.png" alt="フロント">
-    </div>
-    <h3 class="overview-heading">月灯りと湯に包まれる贅沢</h3>
+        <div class="room-image">
+          <img
+            src="images/room_1.jpg"
+            alt="客室のメイン写真"
+            class="room-main"
+          />
+          <img src="images/room_2.jpg" alt="客室のサブ写真" class="room-subs" />
+        </div>
 
-     <p class="overview-text">
-        山あいの豊かな自然に囲まれ、日常の喧騒を忘れてゆったりとした時間を過ごせる場所です。<br>
-        春には新緑、夏には青々とした木々、秋には美しい紅葉、冬には澄んだ空気と静かな景色など、四季折々の表情を楽しむことができます。
-    </p>
+        <div class="room-content">
+          <h3 class="room-heading">静寂に包まれる和のやすらぎ空間</h3>
+          <p class="room-text">
+            やわらかな畳の香りに包まれた和室は、<br />
+            日常の喧騒を忘れさせてくれる落ち着いた空間。
+          </p>
 
-    <p class="overview-text">
-        自然あふれる田舎の原風景と心地よい空間が広がり、訪れる人々に特別な体験をお届けします。
-    </p>
+          <p class="room-text">
+            大きな窓からは四季折々の自然が広がり、<br />
+            朝はやさしい光が差し込み、夜は静かな月明かりが心を癒します。
+          </p>
+          <a href="#" class="more-link"
+            >詳しくはこちら <span class="link-arrow">→</span></a
+          >
+        </div>
+      </section>
 
-    <a href="#" class="overview-link">詳しくはこちら <span class="link-arrow">→</span></a>
+      <section class="meal">
+        <div class="meal-images">
+          <img src="images/meal_1.jpg" alt="食事" class="meal-main" />
+          <img src="images/wine.jpg" alt="ワイン" class="meal-sub" />
+        </div>
 
-</section>
+        <div class="meal-side">
+          <div class="meal-labels">
+            <p class="meal-en">Restaurant</p>
+            <h2 class="meal-ja">お食事</h2>
+          </div>
+        </div>
 
-<section class="room">
-<div class="room-side">
-    <span class="room-bar"></span>
+        <div class="meal-content">
+          <h3 class="meal-heading">
+            四季折々の恵みを贅沢に<br />取り入れた会席料理
+          </h3>
 
-    <div class="room-labels">
-    <p class="room-ja">お部屋</p>
-    <p class="room-en">Room</p>
-</div>
-</div>
-
-<div class="room-image">
-<img src="images/room_1.jpg" alt="客室のメイン写真" class="room-main">
-<img src="images/room_2.jpg" alt="客室のサブ写真" class="room-subs">
-</div>
-
-<div class="room-content">
-    <h3 class="room-heading">静寂に包まれる和のやすらぎ空間</h3>
-    <p class="room-text">
-        やわらかな畳の香りに包まれた和室は、<br>
-        日常の喧騒を忘れさせてくれる落ち着いた空間。
-    </p>
-
-    <p class="room-text">
-        大きな窓からは四季折々の自然が広がり、<br>
-        朝はやさしい光が差し込み、夜は静かな月明かりが心を癒します。
-    </p>
-
-    <a href="#" class="room-link">詳しくはこちら <span class="link-arrow">→</span></a>
-</div>
-</section>
-
-<section class="meal">
-  
-    <div class="meal-images">
-        <img src="images/meal_1.jpg" alt="食事" class="meal-main">
-        <img src="images/wine.jpg" alt="ワイン" class="meal-sub">
-    </div>
-
-    <div class="meal-side">
-    <span class="meal-bar"></span>
-
-    <div class="meal-labels">
-    <p class="meal-en">Restaurant</p>
-    <p class="meal-ja">お食事</p>
-</div>
-</div>
-
-    <div class="meal-content">
-        <h3 class="meal-heading">四季折々の恵みを贅沢に<br>取り入れた会席料理</h3>
-
-        <p class="meal-text">
-            新鮮な海の幸と山の幸を一品一品丁寧に仕立てて、<br>
+          <p class="meal-text">
+            新鮮な海の幸と山の幸を一品一品丁寧に仕立てて、<br />
             彩り・香り・味わいのすべてで五感を満たします。
-        </p>
+          </p>
 
-        <p class="meal-text">
-            そして、炭火で焼き上げる逸品や繊細な小鉢の数々が、<br>
+          <p class="meal-text">
+            そして、炭火で焼き上げる逸品や繊細な小鉢の数々が、<br />
             特別なひとときをより一層引き立てます。
-        </p>
+          </p>
 
-        <a href="#" class="meal-link">詳しくはこちら <span class="link-arrow">→</span></a>
-    </div>
+          <a href="#" class="more-link"
+            >詳しくはこちら <span class="link-arrow">→</span></a
+          >
+        </div>
+      </section>
 
-</section>
+      <section class="onsen">
+        <div class="onsen-side">
+          <div class="onsen-labels">
+            <h2 class="onsen-ja">温泉</h2>
+            <p class="onsen-en">Hot spring</p>
+          </div>
+        </div>
 
-<section class="onsen">
- <div class="onsen-head">
-<span class="onsen-bar"></span>
-<div class="onsen-labels">
-    <p class="onsen-ja">温泉</p>
-    <p class="onsen-en">Hot spring</p>
-</div>
- </div>
+        <div class="onsen-images">
+          <img src="images/hot-spring_1.png" alt="温泉1" class="onsen-main" />
+          <img src="images/hot-spring_2.jpg" alt="温泉2" class="onsen-sub" />
+        </div>
 
-    <div class="onsen-images">
-        <img src="images/hot-spring_1.png" alt="温泉1" class="onsen-main">
-        <img src="images/hot-spring_2.jpg" alt="温泉2" class="onsen-sub">
-    </div>
+        <div class="onsen-content">
+          <h3 class="onsen-heading">自然に抱かれた開放感あふれる露天風呂</h3>
 
-    <div class="onsen-content">
-        <h3 class="onsen-heading">自然に抱かれた開放感あふれる露天風呂</h3>
-
-        <p class="onsen-text">
-            やわらかな灯りに包まれながら、清らかな川のせせらぎとともに、<br>
+          <p class="onsen-text">
+            やわらかな灯りに包まれながら、清らかな川のせせらぎとともに、<br />
             心ほどける癒しの時間をお過ごしいただけます。
-            
-        </p>
+          </p>
 
-        <p class="onsen-text">
-            源泉かけ流しの湯が日常の喧騒を忘れさせ、<br>
+          <p class="onsen-text">
+            源泉かけ流しの湯が日常の喧騒を忘れさせ、<br />
             あなたを深いくつろぎへと誘います。
-        </p>
+          </p>
 
-        <a href="#" class="onsen-link">詳しくはこちら <span class="link-arrow">→</span></a>
-    </div>
+          <a href="#" class="more-link"
+            >詳しくはこちら <span class="link-arrow">→</span></a
+          >
+        </div>
 
-    <div class="onsen-images-full">
-        <img src="images/hot-room.jpg" alt="サウナ" class="onsen-hot-room">
-    </div>
+        <div class="onsen-images-full">
+          <img src="images/hot-room.jpg" alt="サウナ" class="onsen-hot-room" />
+        </div>
+      </section>
 
-</section>
+      <section class="attractions">
+        <div class="attractions-top">
+          <div class="attractions-side">
+            <div class="attractions-labels">
+              <h2 class="attractions-ja">近隣観光地</h2>
+              <p class="attractions-en">Attractions</p>
+            </div>
+          </div>
 
-<section class="attractions">
-<div class="attractions-top">
-<div class="attractions-head">
-    <span class="attractions-bar"></span>
-    <div class="attractions-labels">
-        <p class="attractions-ja">近隣観光地</p>
-        <p class="attractions-en">Attractions</p>
-    </div>
-</div>
-
-<div class="attractions-content">
-     <h3 class="attractions-heading">歴史と自然に出会う、心ほどける近隣観光</h3>
+          <div class="attractions-content">
+            <h3 class="attractions-heading">
+              歴史と自然に出会う、心ほどける近隣観光
+            </h3>
 
             <p class="attractions-text">
-            宿を出れば、そこにはその土地ならではの風景と、長い時を重ねてきた歴史や文化が広がっています。<br>
-            名所を巡り、街を歩き、季節の景色を楽しみながら、旅のひとときをゆっくりとお過ごしください。
+              宿を出れば、そこにはその土地ならではの風景と、長い時を重ねてきた歴史や文化が広がっています。<br />
+              名所を巡り、街を歩き、季節の景色を楽しみながら、旅のひとときをゆっくりとお過ごしください。
             </p>
 
-            <a href="#" class="attractions-link">詳しくはこちら <span class="link-arrow">→</span></a>
+            <a href="#" class="more-link"
+              >詳しくはこちら <span class="link-arrow">→</span></a
+            >
+          </div>
         </div>
-    </div>
 
-    <div class="attractions-grid">
-        <img src="images/place.2.jpg" alt="観光地1" class="attractions-img">
-        <img src="images/place.1.jpg" alt="観光地2" class="attractions-img">
-        <img src="images/place.3.jpg" alt="観光地3" class="attractions-img">
-        <img src="images/place.4.jpg" alt="観光地4" class="attractions-img">
-    </div>
-</section>
+        <div class="attractions-grid">
+          <img src="images/place.2.jpg" alt="観光地1" class="attractions-img" />
+          <img src="images/place.1.jpg" alt="観光地2" class="attractions-img" />
+          <img src="images/place.3.jpg" alt="観光地3" class="attractions-img" />
+          <img src="images/place.4.jpg" alt="観光地4" class="attractions-img" />
+        </div>
+      </section>
 
-<section class="access">
-<div class="access-side">
-    <span class="bar-vertical"></span>
-    <div class="access-labels">
-    <p class="access-ja">アクセス</p>
-    <p class="access-en">Access</p>
-</div>
-</div>
+      <section class="access">
+        <div class="access-side">
+          <div class="access-labels">
+            <h2 class="access-ja">アクセス</h2>
+            <p class="access-en">Access</p>
+          </div>
+        </div>
 
-<div class="access-content">
-    <h3 class="access-heading">星のや <span class="access-heading-sub">— 湯ノ杜 —</span></h3>
+        <div class="access-content">
+          <h3 class="access-heading">
+            星のや <span class="access-heading-sub">— 湯ノ杜 —</span>
+          </h3>
 
-    <p class="access-address">
-            〒879-5100<br>
+          <p class="access-address">
+            〒879-5100<br />
             大分県由布市湯布院町川上 2178-1
-    </p>
-    <a href="#" class="access-maplink">Google Maps <span class="link-arrow">↗</span></a>
-    <div class="access-block">
-        <h4 class="access-subheading">電車でお越しの方</h4>
-        <p class="access-text">JR由布院駅よりお車で約8分。</p>
-    </div>
+          </p>
+          <a href="#" class="access-maplink"
+            >Google Maps <span class="link-arrow">↗</span></a
+          >
+          <div class="access-block">
+            <h4 class="access-subheading">電車でお越しの方</h4>
+            <p class="access-text">JR由布院駅よりお車で約8分。</p>
+          </div>
 
-    <div class="access-block">
-        <h4 class="access-subheading">お車でお越しの方</h4>
-        <p class="access-text">大分自動車道「湯布院IC」より約15分。</p>
-    </div>
-</div>
+          <div class="access-block">
+            <h4 class="access-subheading">お車でお越しの方</h4>
+            <p class="access-text">大分自動車道「湯布院IC」より約15分。</p>
+          </div>
+        </div>
 
-<div class="access-map">
-    <img src="images/map.jpg" alt="地図" class="map">
-</div>
-</section>
+        <div class="access-map">
+          <img src="images/map.jpg" alt="地図" class="map" />
+        </div>
+      </section>
 
-<section class="news">
-<h2 class="news-heading">お知らせ</h2>
-<p class="news-label">Information</p>
-<ul class="news-list">
+      <section class="news">
+        <p class="news-label">Information</p>
+        <h2 class="news-heading">お知らせ</h2>
 
-    <li class="news-item">
-    <span class="news-date">2026/10/29（木）</span>
-    <span class="news-title">ハロウィン限定メニューについて</span>
-    </li>
+        <ul class="news-list">
+          <li class="news-item">
+            <span class="news-date">2026/10/29（木）</span>
+            <span class="news-title">ハロウィン限定メニューについて</span>
+          </li>
 
-     <li class="news-item">
-     <span class="news-date">2026/12/27（日）</span>
-     <span class="news-title">クリスマス限定メニューについて</span>
-     </li>
+          <li class="news-item">
+            <span class="news-date">2026/12/27（日）</span>
+            <span class="news-title">クリスマス限定メニューについて</span>
+          </li>
 
-     <li class="news-item">
-     <span class="news-date">2026/12/29（火）</span>
-     <span class="news-title">おせちの販売について</span>
-     </li>
-</ul>
+          <li class="news-item">
+            <span class="news-date">2026/12/29（火）</span>
+            <span class="news-title">おせちの販売について</span>
+          </li>
+        </ul>
 
- <a href="#" class="news-link">お知らせ一覧 <span class="link-arrow">→</span></a>
-</section>
+        <a href="#" class="more-link"
+          >お知らせ一覧 <span class="link-arrow">→</span></a
+        >
+      </section>
 
-<section class="reserve">
-<h2 class="reserve-heading">ご予約</h2>
-<p class="reserve-text">
-        ご予約は専用予約フォームまたは、<br>
-        お電話にて承ります。
-</p>
-<p class="reserve-note">当サイトからのご予約が最もお得です。</p>
-<a href="#" class="reserve-button">ご予約フォームへ</a>
+      <section class="reserve">
+        <h2 class="reserve-heading">ご予約</h2>
+        <p class="reserve-text">
+          ご予約は専用予約フォームまたは、<br />
+          お電話にて承ります。
+        </p>
+        <p class="reserve-note">当サイトからのご予約が最もお得です。</p>
+        <a href="#" class="reserve-button">ご予約フォームへ</a>
 
-<p class="reserve-tel">Tel. 080-4833-0025</p>
-<p class="reserve-hours">受付時間 9:00 〜 19:00</p>
+        <p class="reserve-tel">Tel. 080-4833-0025</p>
+        <p class="reserve-hours">受付時間 9:00 〜 19:00</p>
+      </section>
+    </main>
 
-</section>
+    <footer class="footer">
+      <p class="footer-logo">星のや 湯ノ杜</p>
 
-</main> 
-
-<footer class="footer">
-    <p class="footer-logo">星のや 湯ノ杜</p>
-
-    <div class="footer-body">
+      <div class="footer-body">
         <div class="footer-info">
-            <address class="footer-address">
-                〒879-5102<br>
-                大分県由布市湯布院町川上 2178-1
-            </address>
-            <p class="footer-tel">Tel 0120-123-4567</p>
+          <address class="footer-address">
+            〒879-5102<br />
+            大分県由布市湯布院町川上 2178-1
+          </address>
+          <p class="footer-tel">Tel 0120-123-4567</p>
 
-            <dl class="footer-time">
-                <div>
-                    <dt>チェックイン時刻</dt>
-                    <dd>15:00〜</dd>
-                </div>
-                <div>
-                    <dt>チェックアウト時刻</dt>
-                    <dd>〜10:00</dd>
-                </div>
-            </dl>
+          <dl class="footer-time">
+            <div>
+              <dt>チェックイン時刻</dt>
+              <dd>15:00〜</dd>
+            </div>
+            <div>
+              <dt>チェックアウト時刻</dt>
+              <dd>〜10:00</dd>
+            </div>
+          </dl>
         </div>
 
         <nav class="footer-nav">
-            <ul class="footer-menu">
-                <li><a href="#">お部屋</a></li>
-                <li><a href="#">お食事</a></li>
-                <li><a href="#">温泉</a></li>
-                <li><a href="#">お知らせ</a></li>
-                <li><a href="#">よくある質問</a></li>
-                <li><a href="#">アクセス</a></li>
-            </ul>
-            <ul class="footer-menu">
-                <li><a href="#">会社概要</a></li>
-                <li><a href="#">個人情報保護方針</a></li>
-                <li><a href="#">キャンセルポリシー</a></li>
-                <li><a href="#">特定商取引法に基づく表記</a></li>
-            </ul>
+          <ul class="footer-menu">
+            <li><a href="#">お部屋</a></li>
+            <li><a href="#">お食事</a></li>
+            <li><a href="#">温泉</a></li>
+            <li><a href="#">お知らせ</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">アクセス</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">個人情報保護方針</a></li>
+            <li><a href="#">キャンセルポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+          </ul>
         </nav>
-    </div>
+      </div>
 
-    <p class="footer-copy"><small>&copy; 2026 All rights reserved.</small></p>
-</footer>
+      <p class="footer-copy"><small>&copy; 2026 All rights reserved.</small></p>
+    </footer>
 
- <script src="js/script.js"></script>  
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
