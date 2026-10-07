@@ -177,11 +177,42 @@ body {
 .first-view {
   width: 100%;
   height: 90vh;
-  background-image: url("/images/mainvisual.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
+  background-color: #0e1a2b;
+}
+
+.fv-slides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.fv-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition:
+    opacity 2s ease,
+    transform 0s 2s;
+}
+
+.fv-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 2s ease,
+    transform 8s linear;
+}
+
+.logo,
+.header-menu,
+.catch-copy {
+  z-index: 2;
 }
 
 .header-menu {
@@ -219,7 +250,7 @@ body {
 
 .hamburger {
   width: 25px;
-  height: 15px;
+  height: 12px;
   border: none;
   background: transparent;
   display: flex;
@@ -451,10 +482,10 @@ body {
 }
 
 .meal-sub {
-  width: 15%;
+  width: 30%;
   position: absolute;
-  left: 10%;
-  bottom: -230px;
+  left: 5%;
+  bottom: -190px;
 }
 
 .meal-side {
@@ -800,6 +831,7 @@ body {
 .news-heading {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 0;
   margin-bottom: 6px;
 }
 
@@ -807,7 +839,7 @@ body {
   font-size: 12px;
   letter-spacing: 2px;
   color: #b8925a;
-  margin-bottom: 40px;
+  margin: 44px 0 8px;
 }
 
 .news-list {
@@ -1072,7 +1104,13 @@ body {
   .first-view {
     height: 80vh;
     height: 80svh;
-    background-position: 75% center;
+  }
+  .fv-slide {
+    object-position: 65% center;
+  }
+
+  .first-view::before {
+    z-index: 1;
   }
 
   .first-view::before {
@@ -1196,7 +1234,7 @@ body {
 
   .meal-labels {
     margin-top: 0;
-    margin-right: -8px;
+    margin-right: -4px;
   }
 
   .meal-main {
@@ -1204,9 +1242,9 @@ body {
   }
 
   .meal-sub {
-    width: 20%;
+    width: 40%;
     left: 16px;
-    bottom: -40px;
+    bottom: -50px;
   }
 
   .meal-content {
@@ -1418,4 +1456,17 @@ body {
 a[href^="tel:"] {
   color: inherit;
   text-decoration: none;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1s,
+    transform 1s;
+}
+
+.fadein.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
