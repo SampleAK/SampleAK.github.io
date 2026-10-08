@@ -38,3 +38,10 @@ if (slides.length > 0) {
     }, 5000);
   }
 }
+
+const language = document.querySelector(".language");
+const languageBtn = document.querySelector(".language-button");
+
+languageBtn.addEventListener("click", function () {
+  language.classList.toggle("is-open"); //
+});
