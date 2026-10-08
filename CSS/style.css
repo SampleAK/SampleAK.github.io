@@ -1482,7 +1482,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 80px;
     row-gap: 28px;
     text-align: left;
   }
@@ -1491,19 +1491,9 @@ body {
     font-size: 17px;
   }
 
-  .footer-menu:last-child {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-  }
-
-  .footer-menu:last-child a {
-    font-size: 11px;
-    letter-spacing: 1px;
-  }
-
   .footer-copy {
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
 }
 
