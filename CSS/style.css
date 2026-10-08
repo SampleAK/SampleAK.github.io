@@ -251,13 +251,17 @@ body {
 
 .language-list {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 0;
+  margin: 0;
   list-style: none;
-  background: #0e1a2b;
-  padding: 8px 16px;
+  background: none;
+  padding: 4px 16px 8px;
   opacity: 0;
   visibility: hidden;
+}
+.language-list li + li {
+  margin-top: 6px;
 }
 
 .language.is-open .language-list {
@@ -1177,7 +1181,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    padding: 20px;
+    padding: 30px 20px 20px;
     align-items: start;
   }
 
