@@ -1,9 +1,11 @@
-const hamburger = document.querySelector(".hamburger");
+const openButtons = document.querySelectorAll(".hamburger, .sp-nav-menu");
 const menu = document.querySelector(".menu");
 const closeButton = document.querySelector(".menu-close");
 
-hamburger.addEventListener("click", function () {
-  menu.classList.add("is-open");
+openButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    menu.classList.add("is-open");
+  });
 });
 
 closeButton.addEventListener("click", function () {
