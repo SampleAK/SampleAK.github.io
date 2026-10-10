@@ -12,19 +12,20 @@ img {
   inset: 0;
   z-index: 100;
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: minmax(0, 0.8fr) 1fr 1fr;
   grid-template-rows: 100%;
 }
 
 .menu-image img {
-  width: auto;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
   display: block;
 }
-
 .menu-nav {
   background: #000d1d;
   padding: 60px 40px;
+  overflow-y: auto;
 }
 
 .menu-label {
@@ -64,6 +65,7 @@ img {
   border-left: 1px solid rgba(240, 238, 232, 0.3);
   color: #f0eee8;
   padding: 140px 40px 60px;
+  overflow-y: auto;
 }
 
 .menu-catch {
@@ -373,7 +375,7 @@ body {
   color: #b8925a;
   font-size: 12px;
   letter-spacing: 3px;
-  margin: 0, 0, 12px;
+  margin: 0 0 12px;
 }
 
 .overview-ja {
@@ -870,6 +872,11 @@ body {
   object-fit: cover;
 }
 
+.access-map {
+  flex: 1;
+  min-width: 0;
+}
+
 .news {
   background-color: #0e1a2b;
   color: #f0eee8;
@@ -1066,7 +1073,88 @@ body {
   display: none;
 }
 
+.menu,
+.menu-nav,
+.menu-info {
+  scrollbar-width: none;
+}
+
+.menu::-webkit-scrollbar,
+.menu-nav::-webkit-scrollbar,
+.menu-info::-webkit-scrollbar {
+  display: none;
+}
+
 @media (max-width: 1024px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu-image {
+    display: none;
+  }
+  .room-side {
+    position: static;
+    margin-bottom: 32px;
+  }
+  .room-labels {
+    margin-top: 0;
+  }
+  .room-main {
+    width: 85%;
+  }
+  .room-subs {
+    width: 35%;
+    right: 5%;
+    bottom: -60px;
+  }
+  .room-content {
+    margin-left: 0;
+  }
+  .room-heading {
+    margin-top: 100px;
+  }
+
+  .meal {
+    display: flex;
+    flex-direction: column;
+  }
+  .meal-side {
+    position: static;
+    order: -1;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
+  .meal-labels {
+    margin: 0;
+  }
+  .meal-main {
+    width: 85%;
+  }
+  .meal-sub {
+    width: 35%;
+    left: 5%;
+    bottom: -60px;
+  }
+  .meal-content {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .onsen-labels {
+    left: 60px;
+  }
+  .onsen-sub {
+    width: 30%;
+    right: 40px;
+    bottom: -60px;
+  }
+  .onsen-images {
+    margin-bottom: 100px;
+  }
+  .onsen-content {
+    margin-left: 0;
+  }
+
   .search-form-inner {
     gap: 40px;
   }
@@ -1078,6 +1166,13 @@ body {
   .attractions-side,
   .access-side {
     padding-left: 0;
+  }
+
+  .access {
+    flex-wrap: wrap;
+  }
+  .access-map {
+    flex-basis: 100%;
   }
 
   .attractions-grid {

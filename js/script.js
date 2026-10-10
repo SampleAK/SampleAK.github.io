@@ -47,3 +47,8 @@ const languageBtn = document.querySelector(".language-button");
 languageBtn.addEventListener("click", function () {
   language.classList.toggle("is-open"); //
 });
+
+if (entry.isIntersecting) {
+  entry.target.classList.add("is-visible");
+  observer.unobserve(entry.target);
+}
