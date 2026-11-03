@@ -4,435 +4,446 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>月明かりの宿 湯の杜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <div class="menu">
-      <div class="menu-image">
-        <img src="images/hamburger_view.jpg" alt="外観" />
+    <header class="header">
+      <a class="header-logo" href="#">
+        <img src="images/logo.png" alt="月明かりの宿 湯の杜" />
+      </a>
+
+      <div class="header-right">
+        <button class="header-language">Language</button>
+        <a href="#" class="header-reservation"
+          >ご宿泊予約
+          <img src="images/calender.png" alt="" width="16" height="16" />
+        </a>
+        <button class="header-menu" aria-label="メニュー">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <nav class="menu-nav">
+      <nav class="sp-tab" aria-label="クイックメニュー">
+        <a href="#" class="sp-tab-item">
+          <img src="images/calender.png" alt="" width="20" height="20" />
+          予約
+        </a>
+        <a href="#" class="sp-tab-item">
+          <img src="images/calender.png" alt="" width="20" height="20" />
+          客室
+        </a>
+        <a href="#" class="sp-tab-item">
+          <img src="images/calender.png" alt="" width="20" height="20" />
+          食事
+        </a>
+        <a href="#" class="sp-tab-item">
+          <img src="images/calender.png" alt="" width="20" height="20" />
+          温泉
+        </a>
+      </nav>
+    </header>
+
+    <div class="menu" id="menu" aria-hidden="true">
+      <button class="menu-close" type="button" aria-label="メニューを閉じる">
+        <span></span>
+        <span></span>
+      </button>
+
+      <img class="menu-image" src="images/hamburger_view.jpg" alt="" />
+
+      <nav class="menu-nav" aria-label="メインメニュー">
         <p class="menu-label">Content</p>
         <ul class="menu-list">
           <li>
-            <a href="#about">宿について<small>About</small></a>
+            <a href="#">トップページ<span class="menu-en">Top</span></a>
           </li>
           <li>
-            <a href="#room">客室<small>Room</small></a>
+            <a href="#">宿について<span class="menu-en">About</span></a>
           </li>
           <li>
-            <a href="#meal">食事<small>Restaurant</small></a>
+            <a href="#">客室<span class="menu-en">Room</span></a>
           </li>
           <li>
-            <a href="#onsen">温泉<small>Hot Spring</small></a>
+            <a href="#">食事<span class="menu-en">Restaurant</span></a>
           </li>
           <li>
-            <a href="#attractions">過ごし方<small>Attractions</small></a>
+            <a href="#">温泉<span class="menu-en">Hot Spring</span></a>
           </li>
-
           <li>
-            <a href="#access">アクセス<small>Access</small></a>
+            <a href="#">お知らせ<span class="menu-en">News</span></a>
+          </li>
+          <li>
+            <a href="#">アクセス<span class="menu-en">Access</span></a>
           </li>
         </ul>
       </nav>
 
       <div class="menu-info">
-        <button class="menu-close" aria-label="メニューを閉じる"></button>
         <p class="menu-catch">自然に抱かれ、心休まる湯宿。</p>
-        <p class="menu-logo">
-          <img src="images/logo.png" alt="ロゴ" />
-          月明かりの宿 <span>— 湯の杜 —</span>
-        </p>
+        <div class="menu-brand">
+          <img class="menu-logo" src="images/logo.png" alt="" />
+          <p class="menu-name">月明かりの宿<span>― 湯の杜 ―</span></p>
+        </div>
 
-        <p class="menu-access-title">Access</p>
+        <p class="menu-label menu-label-access">Access</p>
         <address class="menu-address">
-          〒879-5102<br />
-          大分県由布市湯布院町川上 2178-1
+          〒000-0000<br />
+          大分県由布市湯布院町川上1234-5
         </address>
-        <a href="#" class="menu-map">Google Maps ↗</a>
+        <a class="access-link" href="#" target="_blank" rel="noopener"
+          >Google Maps</a
+        >
+
         <div class="menu-buttons">
-          <a href="#" class="menu-btn">宿泊予約<span>›</span></a>
-          <a href="#" class="menu-btn">宿泊キャンセル<span>›</span></a>
+          <a class="menu-button" href="#">宿泊予約</a>
+          <a class="menu-button" href="#">宿泊キャンセル</a>
         </div>
       </div>
     </div>
 
-    <main>
-      <section class="first-view">
-        <div class="fv-slides">
-          <img src="images/mainvisual.png" alt="fv" class="fv-slide" />
-          <img src="images/fv.room.png" alt="fv.room" class="fv-slide" />
-          <img src="images/fv.meal.png" alt="fv.meal" class="fv-slide" />
-          <img src="images/fv.hot.png" alt="fv.hot" class="fv-slide" />
-        </div>
-        <h1 class="logo">
-          <img src="images/logo.png" alt="月明かりの宿 湯の杜" class="logo1" />
-        </h1>
+    <section class="mv">
+      <div class="mv-slides">
+        <img src="images/mainvisual.png" alt="月明かりの宿 湯の杜" />
+        <img src="images/fv.room.png" alt="客室" />
+        <img src="images/fv.meal.png" alt="食事" />
+        <img src="images/fv.hot.png" alt="温泉" />
+      </div>
+      <h1 class="mv-title">
+        <span>静寂と灯りに包まれる</span>
+        <span>大人の隠れ家</span>
+      </h1>
+    </section>
 
-        <div class="header-menu">
-          <div class="language">
-            <button class="language-button">
-              Language<span class="arrow">▾</span>
-            </button>
-            <ul class="language-list">
-              <li><a href="#">日本語</a></li>
-              <li><a href="#">English</a></li>
-              <li><a href="#">中文</a></li>
-            </ul>
-          </div>
-          <button class="hamburger">
-            <span></span>
-            <span></span>
-          </button>
+    <section class="reserve">
+      <p class="reserve-note">
+        <span>最低価格保証 公式サイトからのご予約が最もお得</span>
+      </p>
+
+      <form class="reserve-form">
+        <p class="reserve-title">宿泊日</p>
+
+        <div class="reserve-item">
+          <label for="date">日程</label>
+          <input type="date" id="date" />
         </div>
 
-        <div class="catch-copy">
-          <p>静寂と灯りに包まれる</p>
-          <p>大人の隠れ家</p>
-        </div>
-      </section>
-
-      <form class="search-form-inner">
-        <div class="search-form-item">
-          <label for="check-in">チェックイン</label>
-          <select id="check-in" name="check-in" class="select">
-            <option value="2026-02-24">2026/2/24</option>
-            <option value="2026-02-26">2026/2/26</option>
-            <option value="2026-02-28">2026/2/28</option>
+        <div class="reserve-item reserve-select">
+          <label for="room">客室</label>
+          <select id="room">
+            <option value="room1">1室</option>
+            <option value="room2">2室</option>
+            <option value="room3">3室</option>
           </select>
         </div>
 
-        <div class="search-form-item">
-          <label for="nights">泊数</label>
-          <select id="nights" name="nights" class="select">
-            <option value="1">1泊</option>
-            <option value="2">2泊</option>
-            <option value="3">3泊</option>
-          </select>
-        </div>
-
-        <div class="search-form-item">
-          <label for="rooms">室数</label>
-          <select id="rooms" name="rooms" class="select">
-            <option value="1">1室</option>
-            <option value="2">2室</option>
-            <option value="3">3室</option>
-          </select>
-        </div>
-
-        <div class="search-form-item">
-          <label for="people">大人</label>
-          <select id="people" name="people" class="select">
+        <div class="reserve-item reserve-select">
+          <label for="people">人数</label>
+          <select id="people">
             <option value="1">1人</option>
             <option value="2">2人</option>
             <option value="3">3人</option>
           </select>
         </div>
 
-        <div class="search-form-item">
-          <button type="submit" class="button">空室検索</button>
-        </div>
+        <button class="reserve-button" type="submit">検索</button>
       </form>
+    </section>
 
-      <section class="overview">
-        <div class="overview-head fadein">
-          <p class="overview-en">Overview</p>
-          <h2 class="overview-ja">月明かりの宿 湯の杜</h2>
-        </div>
-        <div class="overview-image fadein">
-          <img src="images/front.png" alt="フロント" />
-        </div>
-        <h3 class="overview-heading fadein">月灯りと湯に包まれる贅沢</h3>
+    <section class="concept">
+      <img src="images/moon.png" alt="" class="concept-image" />
+      <p class="concept-note">Concept</p>
+      <h2 class="concept-title">月灯りと湯に包まれる贅沢</h2>
+      <p class="concept-text">
+        山あいの豊かな自然に囲まれ、日常の喧騒を忘れてゆったりとした時間を過ごせる場所です。<br />
+        春には新緑、夏には青々とした木々、秋には美しい紅葉、冬には澄んだ空気と静かな景色など、
+        四季折々の表情を楽しむことができます。
+      </p>
 
-        <p class="overview-text fadein">
-          山あいの豊かな自然に囲まれ、日常の喧騒を忘れてゆったりとした時間を過ごせる場所です。<br />
-          春には新緑、夏には青々とした木々、秋には美しい紅葉、冬には澄んだ空気と静かな景色など、四季折々の表情を楽しむことができます。
+      <p class="concept-text">
+        自然あふれる田舎の原風景と心地よい空間が広がり、訪れる人々に特別な体験をお届けします。
+      </p>
+
+      <a href="#" class="more-link">詳しく見る</a>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-track">
+        <img src="images/room1.jpg" alt="客室" />
+        <img src="images/meal.jpg" alt="食事" />
+        <img src="images/room2.jpg" alt="和室" />
+        <img src="images/room1.jpg" alt="客室" />
+        <img src="images/meal.jpg" alt="食事" />
+        <img src="images/room2.jpg" alt="和室" />
+      </div>
+    </section>
+
+    <section class="room">
+      <div class="room-visual">
+        <img class="room-image-main" src="images/room_1.jpg" alt="客室" />
+        <img class="room-image-sub" src="images/room_2.jpg" alt="和室" />
+        <h2 class="room-heading">
+          <span class="room-label">Room</span>
+          <span>客室</span>
+        </h2>
+      </div>
+
+      <div class="room-text">
+        <h3 class="room-title">静寂に包まれる和のやすらぎ空間</h3>
+        <p class="room-description">
+          やわらかな畳の香りに包まれた和室は、日常の喧騒を忘れさせてくれる落ち着いた空間。<br />
+          大きな窓からは四季折々の自然が広がり、朝はやさしい光が差し込み、夜は静かな月明かりが心を癒します。
         </p>
+        <a href="#" class="more-link">宿泊・客室</a>
+      </div>
+    </section>
 
-        <p class="overview-text fadein">
-          自然あふれる田舎の原風景と心地よい空間が広がり、訪れる人々に特別な体験をお届けします。
+    <section class="restaurant">
+      <div class="restaurant-visual">
+        <img class="restaurant-image-main" src="images/meal_1.jpg" alt="食事" />
+        <img class="restaurant-image-sub" src="images/wine.png" alt="ワイン" />
+        <h2 class="restaurant-heading">
+          <span class="restaurant-label">Restaurant</span>
+          <span>食事</span>
+        </h2>
+      </div>
+
+      <div class="restaurant-text">
+        <h3 class="restaurant-title">
+          四季折々の恵みを贅沢に取り入れた会席料理
+        </h3>
+        <p class="restaurant-description">
+          新鮮な海の幸と山の幸を一品一品丁寧に仕立て、彩り・香り・味わいのすべてで五感を満たします。<br />
+          そして、炭火で焼き上げる逸品や繊細な小鉢の数々が、特別なひとときをより一層引き立てます。
         </p>
+        <a href="#" class="more-link restaurant-link">食事・レストラン</a>
+      </div>
+    </section>
 
-        <a href="#" class="more-link fadein"
-          >詳しくはこちら <span class="link-arrow">→</span></a
-        >
-      </section>
+    <section class="bath">
+      <div class="bath-visual">
+        <img
+          class="bath-image-main"
+          src="images/hot-spring_1.png"
+          alt="露天風呂"
+        />
+        <img class="bath-image-sub" src="images/hot-spring_2.jpg" alt="内湯" />
+        <h2 class="bath-heading">
+          <span class="bath-label">Hot Spring</span>
+          <span>温泉</span>
+        </h2>
+      </div>
 
-      <section class="room">
-        <div class="room-side">
-          <div class="room-labels fadein">
-            <h2 class="room-ja">客室</h2>
-            <p class="room-en">Room</p>
+      <div class="bath-text">
+        <h3 class="bath-title">自然に抱かれた開放感あふれる露天風呂</h3>
+        <p class="bath-description">
+          やわらかな灯りに包まれながら、清らかな川のせせらぎとともに、心ほどける癒しの時間をお過ごしいただけます。<br />
+          源泉かけ流しの湯が日常の喧騒を忘れさせ、あなたを深いくつろぎへと誘います。
+        </p>
+        <a href="#" class="more-link">温泉・サウナ</a>
+      </div>
+      <div class="bath-photos">
+        <img
+          class="bath-photos-left"
+          src="images/hot-spring3.jpg"
+          alt="露天風呂"
+        />
+        <img class="bath-photos-right" src="images/hot-room.jpg" alt="内湯" />
+      </div>
+    </section>
+
+    <section class="attractions">
+      <div class="attractions-intro">
+        <h2 class="attractions-heading">
+          <span class="attractions-label">Attractions</span>
+          <span>過ごし方</span>
+        </h2>
+
+        <div class="attractions-text">
+          <h3 class="attractions-title">湯の合間に、この土地の物語を。</h3>
+          <p class="attractions-description">
+            宿の周りには、季節ごとに表情を変える山々や渓谷が広がります。<br />
+            紅葉の名所めぐりや竹林の散策、トロッコ列車の旅など、湯の合間にこの地ならではの景色をお楽しみください。
+          </p>
+          <a href="#" class="more-link">観光名所・近隣観光地</a>
+        </div>
+      </div>
+      <div class="attractions-photos">
+        <div class="attractions-row">
+          <img
+            class="attractions-photo-wide"
+            src="images/place.1.jpg"
+            alt="紅葉の山と橋の景色"
+          />
+          <img
+            class="attractions-photo-narrow"
+            src="images/place.2.jpg"
+            alt="日本庭園"
+          />
+        </div>
+
+        <div class="attractions-row">
+          <img
+            class="attractions-photo-narrow"
+            src="images/place.3.jpg"
+            alt="竹林の小道"
+          />
+          <img
+            class="attractions-photo-wide"
+            src="images/place.4.jpg"
+            alt="渓谷を走るトロッコ列車"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="news-intro">
+        <h2 class="news-heading">
+          <span class="news-label">Information</span>
+          <span>お知らせ</span>
+        </h2>
+
+        <article class="news-featured">
+          <div class="news-meta">
+            <time datetime="2026-10-27">2026/10/27(火)</time>
+            <span class="news-category">食事</span>
           </div>
-        </div>
-
-        <div class="room-image">
-          <img
-            src="images/room_1.jpg"
-            alt="客室のメイン写真"
-            class="room-main fadein"
-          />
-          <img
-            src="images/room_2.jpg"
-            alt="客室のサブ写真"
-            class="room-subs fadein"
-          />
-        </div>
-
-        <div class="room-content fadein">
-          <h3 class="room-heading">静寂に包まれる和のやすらぎ空間</h3>
-          <p class="room-text">
-            やわらかな畳の香りに包まれた和室は、<br />
-            日常の喧騒を忘れさせてくれる落ち着いた空間。
-          </p>
-
-          <p class="room-text">
-            大きな窓からは四季折々の自然が広がり、<br />
-            朝はやさしい光が差し込み、夜は静かな月明かりが心を癒します。
-          </p>
-          <a href="#" class="more-link"
-            >詳しくはこちら <span class="link-arrow">→</span></a
-          >
-        </div>
-      </section>
-
-      <section class="meal">
-        <div class="meal-images">
-          <img src="images/meal_1.jpg" alt="食事" class="meal-main fadein" />
-          <img src="images/wine.png" alt="ワイン" class="meal-sub fadein" />
-        </div>
-
-        <div class="meal-side">
-          <div class="meal-labels fadein">
-            <p class="meal-en">Restaurant</p>
-            <h2 class="meal-ja">食事</h2>
-          </div>
-        </div>
-
-        <div class="meal-content fadein">
-          <h3 class="meal-heading">
-            四季折々の恵みを贅沢に<br />取り入れた会席料理
-          </h3>
-
-          <p class="meal-text">
-            新鮮な海の幸と山の幸を一品一品丁寧に仕立てて、<br />
-            彩り・香り・味わいのすべてで五感を満たします。
-          </p>
-
-          <p class="meal-text">
-            そして、炭火で焼き上げる逸品や繊細な小鉢の数々が、<br />
-            特別なひとときをより一層引き立てます。
-          </p>
-
-          <a href="#" class="more-link"
-            >詳しくはこちら <span class="link-arrow">→</span></a
-          >
-        </div>
-      </section>
-
-      <section class="onsen">
-        <div class="onsen-side">
-          <div class="onsen-labels fadein">
-            <h2 class="onsen-ja">温泉</h2>
-            <p class="onsen-en">Hot spring</p>
-          </div>
-        </div>
-
-        <div class="onsen-images">
-          <img
-            src="images/hot-spring_1.png"
-            alt="温泉1"
-            class="onsen-main fadein"
-          />
-          <img
-            src="images/hot-spring_2.jpg"
-            alt="温泉2"
-            class="onsen-sub fadein"
-          />
-        </div>
-
-        <div class="onsen-content fadein">
-          <h3 class="onsen-heading">自然に抱かれた開放感あふれる露天風呂</h3>
-
-          <p class="onsen-text">
-            やわらかな灯りに包まれながら、清らかな川のせせらぎとともに、<br />
-            心ほどける癒しの時間をお過ごしいただけます。
-          </p>
-
-          <p class="onsen-text">
-            源泉かけ流しの湯が日常の喧騒を忘れさせ、<br />
-            あなたを深いくつろぎへと誘います。
-          </p>
-
-          <a href="#" class="more-link"
-            >詳しくはこちら <span class="link-arrow">→</span></a
-          >
-        </div>
-
-        <div class="onsen-images-full">
-          <img
-            src="images/hot-room.jpg"
-            alt="サウナ"
-            class="onsen-hot-room fadein"
-          />
-        </div>
-      </section>
-
-      <section class="attractions">
-        <div class="attractions-top">
-          <div class="attractions-side">
-            <div class="attractions-labels fadein">
-              <h2 class="attractions-ja">過ごし方</h2>
-              <p class="attractions-en">Attractions</p>
-            </div>
-          </div>
-
-          <div class="attractions-content fadein">
-            <h3 class="attractions-heading">
-              歴史と自然に出会う、心ほどける近隣観光
-            </h3>
-
-            <p class="attractions-text">
-              宿を出れば、そこにはその土地ならではの風景と、長い時を重ねてきた歴史や文化が広がっています。<br />
-              名所を巡り、街を歩き、季節の景色を楽しみながら、旅のひとときをゆっくりとお過ごしください。
+          <div class="news-content">
+            <img class="news-image" src="images/news.1.jpg" alt="料理の写真" />
+            <h3 class="news-title">秋の味覚を楽しむ季節限定会席のご案内</h3>
+            <p class="news-description">
+              松茸や旬のきのこ、彩り豊かな秋野菜など、季節の恵みをふんだんに取り入れた秋限定の会席料理をご用意いたしました。
+              素材本来の味わいを大切にしながら、料理長が一品一品丁寧に仕上げたお料理は、目でも舌でも秋の訪れを感じていただける逸品ばかりです。
+              旬の食材が織りなす豊かな香りと深い味わいを、落ち着いた和の空間でゆっくりとお楽しみください。
             </p>
 
-            <a href="#" class="more-link"
-              >詳しくはこちら <span class="link-arrow">→</span></a
-            >
+            <p class="news-description">
+              秋だけの特別な味わいを楽しめるこの機会に、ぜひ当館へお越しください。皆様のご予約を心よりお待ちしております。
+            </p>
           </div>
-        </div>
-
-        <div class="attractions-grid fadein">
-          <img src="images/place.2.jpg" alt="観光地1" class="attractions-img" />
-          <img src="images/place.1.jpg" alt="観光地2" class="attractions-img" />
-          <img src="images/place.3.jpg" alt="観光地3" class="attractions-img" />
-          <img src="images/place.4.jpg" alt="観光地4" class="attractions-img" />
-        </div>
-      </section>
-
-      <section class="access">
-        <div class="access-side">
-          <div class="access-labels fadein">
-            <h2 class="access-ja">アクセス</h2>
-            <p class="access-en">Access</p>
+        </article>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <img class="news-image" src="images/news.2.png" alt="紅葉の写真" />
+          <div class="news-body">
+            <div class="news-meta">
+              <time datetime="2026-10-25">2026/10/25(日)</time>
+              <span class="news-category">温泉</span>
+            </div>
+            <h3 class="news-title">秋の紅葉露天風呂が見頃を迎えました</h3>
+            <p class="news-description">
+              山々が鮮やかな紅葉に包まれ、露天風呂から秋ならではの美しい景色をお楽しみいただける季節となりました。<br />
+              心安らぐひとときを、ぜひ当館でお過ごしください。
+            </p>
           </div>
-        </div>
+        </article>
 
-        <div class="access-content fadein">
-          <h3 class="access-heading">
-            月明かりの宿 <span class="access-heading-sub">— 湯の杜 —</span>
-          </h3>
+        <article class="news-item">
+          <img class="news-image" src="images/news.3.jpg" alt="紅葉の写真" />
+          <div class="news-body">
+            <div class="news-meta">
+              <time datetime="2026-10-23">2026/10/23(金)</time>
+              <span class="news-category">温泉</span>
+            </div>
+            <h3 class="news-title">館内温泉のメンテナンス実施について</h3>
+            <p class="news-description">
+              2026年11月1日(月)から2026年11月3日(水)まで、館内温泉のメンテナンスを実施いたします。<br />
+              この期間中は、露天風呂・内湯ともにご利用いただけませんので、予めご了承ください。<br />
+              ご迷惑をおかけいたしますが、何卒ご理解のほどよろしくお願い申し上げます。
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="news-more">
+        <a href="#" class="more-link">詳しく見る</a>
+      </div>
+    </section>
+    <section class="access">
+      <h2 class="access-heading">
+        <span class="access-label">Access</span>
+        <span>アクセス</span>
+      </h2>
 
-          <p class="access-address">
-            〒879-5102<br />
-            大分県由布市湯布院町川上 2178-1
-          </p>
-          <a href="#" class="access-maplink"
-            >Google Maps <span class="link-arrow">↗</span></a
-          >
-          <div class="access-block">
-            <h4 class="access-subheading">電車でお越しの方</h4>
-            <p class="access-text">JR由布院駅よりお車で約8分。</p>
+      <img class="access-map" src="images/map.png" alt="湯の杜周辺の地図" />
+
+      <div class="access-info">
+        <dl class="access-list">
+          <div class="access-item">
+            <dt>電車でお越しの方</dt>
+            <dd>JR由布院駅よりお車で約8分。</dd>
           </div>
 
-          <div class="access-block">
-            <h4 class="access-subheading">お車でお越しの方</h4>
-            <p class="access-text">大分自動車道「湯布院IC」より約15分。</p>
+          <div class="access-item">
+            <dt>お車でお越しの方</dt>
+            <dd>大分自動車道「湯布院IC」より約15分。</dd>
           </div>
-        </div>
+        </dl>
 
-        <div class="access-map">
-          <img src="images/map.png" alt="地図" class="map fadein" />
-        </div>
-      </section>
-
-      <section class="news">
-        <p class="news-label fadein">Information</p>
-        <h2 class="news-heading fadein">お知らせ</h2>
-
-        <ul class="news-list fadein">
-          <li class="news-item">
-            <span class="news-date">2026.10.01（木）</span>
-            <span class="news-title">秋の会席料理のご案内</span>
-          </li>
-
-          <li class="news-item">
-            <span class="news-date">2026.09.15（火）</span>
-            <span class="news-title">紅葉シーズンのご予約について</span>
-          </li>
-
-          <li class="news-item">
-            <span class="news-date">2026.09.01（火）</span>
-            <span class="news-title">冬季営業のお知らせ</span>
-          </li>
-        </ul>
-
-        <a href="#" class="more-link fadein"
-          >お知らせ一覧 <span class="link-arrow">→</span></a
-        >
-      </section>
-    </main>
-
-    <footer class="footer fadein">
-      <p class="footer-logo">月明かりの宿 湯の杜</p>
-
-      <div class="footer-body">
+        <a class="access-link" href="#" target="_blank" rel="noopener">
+          Google Maps
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-inner">
         <div class="footer-info">
+          <p class="footer-name">月明かりの宿 湯の杜</p>
+
           <address class="footer-address">
-            〒879-5102<br />
-            大分県由布市湯布院町川上 2178-1
+            〒000-0000<br />
+            大分県由布市湯布院町川上1234-5
           </address>
 
-          <a href="#" class="footer-reserve">ご予約フォームへ</a>
-          <p class="footer-tel">
-            Tel <a href="tel:01201234567">0120-123-4567</a>
-          </p>
-          <p class="footer-hours">受付時間 9:00 〜 19:00</p>
+          <a class="footer-reserve" href="#">ご予約フォーム</a>
 
-          <dl class="footer-time">
+          <p class="footer-tel">
+            <a href="tel:0120-000-0000">Tel 0120-000-0000</a>
+          </p>
+          <p class="footer-hours">受付時間 9:00〜19:00</p>
+
+          <dl class="footer-checkin">
             <div>
               <dt>チェックイン時刻</dt>
               <dd>15:00〜</dd>
             </div>
+
             <div>
               <dt>チェックアウト時刻</dt>
-              <dd>〜10:00</dd>
+              <dd>〜11:00</dd>
             </div>
           </dl>
         </div>
+
         <nav class="footer-nav">
           <ul class="footer-menu">
             <li><a href="#">宿について</a></li>
             <li><a href="#">客室</a></li>
             <li><a href="#">食事</a></li>
             <li><a href="#">温泉</a></li>
-            <li><a href="#">アクセス</a></li>
+            <li><a href="#">過ごし方</a></li>
             <li><a href="#">お知らせ</a></li>
+            <li><a href="#">アクセス</a></li>
           </ul>
-
-          <ul class="footer-menu footer-menu-sub">
+          <ul class="footer-menu">
             <li><a href="#">会社概要</a></li>
-            <li><a href="#">特定商取引法に基づく表記</a></li>
-            <li><a href="#">個人情報保護方針</a></li>
+            <li><a href="#">特定商取引表に基づく表記</a></li>
+            <li><a href="#">個人情報保護法</a></li>
             <li><a href="#">キャンセルポリシー</a></li>
           </ul>
         </nav>
       </div>
 
-      <p class="footer-copy"><small>&copy; 2026 All rights reserved.</small></p>
+      <small class="footer-copy">©2026 All rights reserved</small>
     </footer>
-    <nav class="sp-nav">
-      <a href="#" class="sp-nav-reserve">ご宿泊予約</a>
-      <a href="#room">客室</a>
-      <a href="#meal">食事</a>
-      <a href="#onsen">温泉</a>
-      <button class="sp-nav-menu" aria-label="メニューを開く">
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
     <script src="js/script.js"></script>
   </body>
 </html>
