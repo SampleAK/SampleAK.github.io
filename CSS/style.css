@@ -488,6 +488,7 @@ img {
   color: #c1b395;
   font-size: 14px;
   letter-spacing: 0.1em;
+  white-space: nowrap;
 }
 
 .bath-text {
@@ -1119,7 +1120,7 @@ body.is-menu-open {
   }
 
   .mv-title span:nth-child(2) {
-    margin-top: 220px;
+    margin-top: 210px;
   }
 
   .mv-slides img:nth-child(1) {
@@ -1161,9 +1162,10 @@ body.is-menu-open {
   }
 
   .concept-image {
-    top: 30px;
+    top: 40px;
     right: 24px;
-    width: 120px;
+    width: 180px;
+    filter: brightness(1.4) drop-shadow(0 0 16px rgba(239, 233, 225, 0.35));
   }
 
   .concept-note {
@@ -1267,11 +1269,11 @@ body.is-menu-open {
     width: 42%;
   }
   .restaurant-visual {
-    margin-bottom: 120px;
+    margin-bottom: 136px;
   }
 
   .restaurant-heading {
-    top: calc(100% + 24px);
+    top: calc(100% + 40px);
     bottom: auto;
     right: 24px;
   }
@@ -1283,7 +1285,7 @@ body.is-menu-open {
   }
 
   .bath-visual {
-    margin-bottom: 120px;
+    margin-bottom: 142px;
   }
 
   .bath-image-sub {
@@ -1293,6 +1295,7 @@ body.is-menu-open {
   }
 
   .bath-heading {
+    top: calc(100% + 40px);
     left: 24px;
     bottom: -90px;
   }
