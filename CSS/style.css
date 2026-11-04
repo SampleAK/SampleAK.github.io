@@ -3,6 +3,18 @@ body {
   font-family: "Noto serif JP";
   background-color: #000d1d;
 }
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
+}
+
+.fadein.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 img {
   max-width: 100%;
@@ -102,6 +114,41 @@ img {
 
 .header-logo img {
   width: 80px;
+}
+
+.language {
+  position: relative;
+  align-self: center;
+}
+
+.language-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 140px;
+  background-color: #efe9e1;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s,
+    visibility 0.4s;
+}
+
+.language-list.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.language-list a {
+  display: block;
+  padding: 10px 16px;
+  color: #000d1d;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.1em;
 }
 
 .header-language {
@@ -1113,7 +1160,7 @@ body.is-menu-open {
   }
 
   .mv-title {
-    top: 180px;
+    top: 170px;
     right: 28px;
     font-size: 24px;
     letter-spacing: 0.3em;
@@ -1174,13 +1221,16 @@ body.is-menu-open {
 
   .concept-title {
     margin-bottom: 36px;
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .concept-text {
     font-size: 13px;
-    line-height: 2.1;
-    text-align: left;
+    line-height: 2;
+    text-align: center;
+    font-weight: 300;
+    word-break: auto-phrase;
+    text-wrap: balance;
   }
 
   .gallery {
@@ -1214,10 +1264,12 @@ body.is-menu-open {
   .restaurant-title,
   .bath-title,
   .attractions-title {
-    margin-bottom: 16px;
-    font-size: 18px;
-    line-height: 1.7;
-    letter-spacing: 0.08em;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    word-break: auto-phrase;
+    text-wrap: balance;
   }
 
   .room-description,
@@ -1225,15 +1277,15 @@ body.is-menu-open {
   .bath-description,
   .attractions-description {
     font-size: 13px;
-    line-height: 2.1;
+    line-height: 2;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    word-break: auto-phrase;
+    text-wrap: balance;
   }
 
-  .concept-text br,
-  .room-description br,
-  .restaurant-description br,
-  .bath-description br,
-  .attractions-description br {
-    display: none;
+  .attractions-description {
+    color: rgba(0, 13, 29, 0.8);
   }
 
   .room-visual {
@@ -1282,6 +1334,10 @@ body.is-menu-open {
     width: auto;
     margin: 0;
     padding: 0 24px;
+  }
+
+  .restaurant-link {
+    align-self: flex-start;
   }
 
   .bath-visual {
@@ -1370,11 +1426,14 @@ body.is-menu-open {
 
   .news-title {
     margin-bottom: 12px;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .news-description {
-    font-size: 12px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    word-break: auto-phrase;
+    text-wrap: balance;
   }
 
   .news-list {
@@ -1395,12 +1454,12 @@ body.is-menu-open {
   .news-item .news-meta {
     flex-wrap: wrap;
     gap: 4px 8px;
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .news-item .news-title {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .news-item .news-description {
@@ -1433,7 +1492,7 @@ body.is-menu-open {
 
   .access-list {
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
   }
 
   .access-item dt {
