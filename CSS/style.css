@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Noto serif JP";
+  font-family: "Noto Serif JP", serif;
   background-color: #000d1d;
 }
 .fadein {
@@ -1167,7 +1167,7 @@ body.is-menu-open {
   }
 
   .mv-title span:nth-child(2) {
-    margin-top: 200px;
+    margin-top: 210px;
   }
 
   .mv-slides img:nth-child(1) {
@@ -1353,7 +1353,7 @@ body.is-menu-open {
   .bath-heading {
     top: calc(100% + 40px);
     left: 24px;
-    bottom: -90px;
+    bottom: auto;
   }
 
   .bath-text {
@@ -1623,5 +1623,149 @@ body.is-menu-open {
 
   .menu-button::after {
     right: 12px;
+  }
+}
+
+:root {
+  --color-navy: #000d1d;
+  --color-gold: #c1b395;
+  --color-beige: #efe9e1;
+  --color-cream: #f8f4ef;
+
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 48px;
+  --space-xl: 120px;
+
+  --fs-title: 24px;
+  --fs-body: 14px;
+  --fs-small: 12px;
+
+  --tab-height: 64px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 13, 29, 0.85);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.header.is-scrolled::before {
+  opacity: 1;
+}
+
+.header-logo,
+.language {
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-xl: 72px;
+    --fs-title: 20px;
+  }
+
+  .header.is-hidden::before,
+  .header.is-hidden .header-logo,
+  .header.is-hidden .language {
+    transform: translateY(-120%);
+  }
+
+  .room,
+  .restaurant,
+  .bath,
+  .attractions,
+  .news,
+  .access {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+
+  .concept {
+    padding-bottom: var(--space-xl);
+  }
+
+  .concept-text,
+  .room-description,
+  .restaurant-description,
+  .bath-description,
+  .attractions-description,
+  .news-description {
+    font-size: var(--fs-body);
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  .concept-title,
+  .room-title,
+  .restaurant-title,
+  .bath-title,
+  .attractions-title,
+  .news-featured .news-title {
+    font-size: var(--fs-title);
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  body {
+    padding-bottom: calc(var(--tab-height) + var(--safe-bottom));
+  }
+
+  .sp-tab,
+  .header-menu {
+    box-sizing: border-box;
+    height: calc(var(--tab-height) + var(--safe-bottom));
+    padding-bottom: var(--safe-bottom);
+  }
+
+  .mv-title {
+    top: 22svh;
+  }
+
+  .mv-title span:nth-child(2) {
+    margin-top: 26svh;
+  }
+
+  .concept-image {
+    width: 40vw;
+    max-width: 180px;
+  }
+
+  .concept-note,
+  .concept-title,
+  .concept-text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .access-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 13px;
+  }
+}
+
+@media (hover: none) {
+  .gallery:hover .gallery-track {
+    animation-play-state: running;
+  }
+
+  .menu-list a:hover,
+  .menu-button:hover {
+    opacity: 1;
   }
 }

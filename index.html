@@ -2,7 +2,10 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <title>月明かりの宿 湯の杜</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +23,15 @@
 
       <div class="header-right">
         <div class="language">
-          <button class="header-language" type="button">Language</button>
-          <ul class="language-list">
+          <button
+            class="header-language"
+            type="button"
+            aria-expanded="false"
+            aria-controls="language-list"
+          >
+            Language
+          </button>
+          <ul class="language-list" id="language-list">
             <li><a href="#" lang="ja">日本語</a></li>
             <li><a href="#" lang="en">English</a></li>
             <li><a href="#" lang="zh">中文</a></li>
@@ -31,7 +41,13 @@
           >ご宿泊予約
           <img src="images/calender.png" alt="" width="16" height="16" />
         </a>
-        <button class="header-menu" aria-label="メニュー">
+        <button
+          class="header-menu"
+          type="button"
+          aria-label="メニュー"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -167,9 +183,11 @@
     <section class="concept">
       <img src="images/moon.png" alt="" class="concept-image fadein" />
       <p class="concept-note fadein">Concept</p>
-      <h2 class="concept-title fadein">月灯りと湯に包まれる贅沢</h2>
+      <h2 class="concept-title fadein">月灯りと<wbr />湯に包まれる贅沢</h2>
       <p class="concept-text fadein">
-        慌ただしい日常を離れ、心安らぐ特別なひとときを過ごしませんか。<br />
+        慌ただしい日常を離れ、心安らぐ特別なひとときを過ごしませんか。<br
+          class="pc-only"
+        />
         豊かな自然と四季折々の美しい景色に包まれながら、心と身体を癒やす温泉をご堪能いただけます。
       </p>
 
@@ -204,11 +222,13 @@
       </div>
 
       <div class="room-text fadein">
-        <h3 class="room-title">静寂に包まれる和のやすらぎ空間</h3>
+        <h3 class="room-title">静寂に包まれる<wbr />和のやすらぎ空間</h3>
         <p class="room-description">
           やわらかな畳の香りと落ち着いた和の空間が、日常の喧騒を忘れさせてくれます。
-          窓の向こうに広がる四季折々の景色。<br />
-          朝はやさしい光に包まれ、夜は月明かりを眺めながら、心ゆくまでくつろぐ贅沢なひとときを。<br />
+          窓の向こうに広がる四季折々の景色。<br class="pc-only" />
+          朝はやさしい光に包まれ、夜は月明かりを眺めながら、心ゆくまでくつろぐ贅沢なひとときを。<br
+            class="pc-only"
+          />
           大切な人と過ごす時間も、自分を癒やす時間も。心安らぐ特別な滞在をお楽しみください。
         </p>
         <a href="#" class="more-link fadein">宿泊・客室</a>
@@ -235,12 +255,16 @@
 
       <div class="restaurant-text fadein">
         <h3 class="restaurant-title">
-          四季折々の恵みを贅沢に取り入れた会席料理
+          四季折々の恵みを<wbr />贅沢に取り入れた<wbr />会席料理
         </h3>
         <p class="restaurant-description">
-          その季節にしか出会えない、海と山の旬の味覚を一品一品丁寧に仕立てました。素材本来の旨みを引き出した料理が,<br />
+          その季節にしか出会えない、海と山の旬の味覚を一品一品丁寧に仕立てました。素材本来の旨みを引き出した料理が、<br
+            class="pc-only"
+          />
           彩り・香り・味わいで旅のひとときを華やかに彩ります。
-          炭火で焼き上げる逸品から、趣向を凝らした季節の一皿まで。<br />
+          炭火で焼き上げる逸品から、趣向を凝らした季節の一皿まで。<br
+            class="pc-only"
+          />
           心満たされる特別な美食の時間をお楽しみください。
         </p>
         <a href="#" class="more-link restaurant-link fadein"
@@ -268,10 +292,16 @@
       </div>
 
       <div class="bath-text fadein">
-        <h3 class="bath-title">自然に抱かれた開放感あふれる露天風呂</h3>
+        <h3 class="bath-title">
+          自然に抱かれた<wbr />開放感あふれる<wbr />露天風呂
+        </h3>
         <p class="bath-description">
-          目の前に広がる豊かな自然と、心地よく響く川のせせらぎ。やわらかな灯りに包まれながら、日常を忘れる至福の湯浴みをご堪能いただけます。<br />
-          源泉かけ流しの湯に身をゆだね、心も身体も解きほぐす贅沢なひとときを。<br />
+          目の前に広がる豊かな自然と、心地よく響く川のせせらぎ。やわらかな灯りに包まれながら、日常を忘れる至福の湯浴みをご堪能いただけます。<br
+            class="pc-only"
+          />
+          源泉かけ流しの湯に身をゆだね、心も身体も解きほぐす贅沢なひとときを。<br
+            class="pc-only"
+          />
           ここでしか味わえない癒やしをご体感ください。
         </p>
         <a href="#" class="more-link fadein">温泉・サウナ</a>
@@ -299,10 +329,12 @@
 
         <div class="attractions-text fadein">
           <h3 class="attractions-title">
-            湯の合間に、この土地だけの特別な旅を。
+            湯の合間に、<wbr />この土地だけの<wbr />特別な旅を。
           </h3>
           <p class="attractions-description">
-            せっかくの旅だからこそ、温泉だけでは味わえない楽しみも。<br />
+            せっかくの旅だからこそ、温泉だけでは味わえない楽しみも。<br
+              class="pc-only"
+            />
             宿の周辺には、四季折々に表情を変える山々や渓谷が広がります。
             紅葉の名所めぐりや竹林の散策、トロッコ列車の旅など、心に残る景色との出会いが待っています。
           </p>
@@ -352,10 +384,12 @@
           </div>
           <div class="news-content fadein">
             <img class="news-image" src="images/news.1.jpg" alt="料理の写真" />
-            <h3 class="news-title">秋の味覚を楽しむ季節限定会席のご案内</h3>
+            <h3 class="news-title">
+              秋の味覚を楽しむ<wbr />季節限定会席の<wbr />ご案内
+            </h3>
             <p class="news-description">
               松茸や旬のきのこ、秋野菜をふんだんに使用した、秋限定の会席料理が登場いたしました。
-              料理長が一品一品丁寧に仕上げた、<br />
+              料理長が一品一品丁寧に仕上げた、<br class="pc-only" />
               秋ならではの豊かな香りと味わいが広がります。
               この季節だけの特別な味覚を、ぜひ当館でご堪能ください。
             </p>
@@ -376,7 +410,9 @@
             </div>
             <h3 class="news-title">秋の紅葉露天風呂が見頃を迎えました</h3>
             <p class="news-description">
-              山々が鮮やかな紅葉に包まれ、露天風呂から秋ならではの美しい景色をお楽しみいただける季節となりました。<br />
+              山々が鮮やかな紅葉に包まれ、露天風呂から秋ならではの美しい景色をお楽しみいただける季節となりました。<br
+                class="pc-only"
+              />
               心安らぐひとときを、ぜひ当館でお過ごしください。
             </p>
           </div>
@@ -391,8 +427,12 @@
             </div>
             <h3 class="news-title">館内温泉のメンテナンス実施について</h3>
             <p class="news-description">
-              2026年11月1日(月)から2026年11月3日(水)まで、館内温泉のメンテナンスを実施いたします。<br />
-              この期間中は、露天風呂・内湯ともにご利用いただけませんので、予めご了承ください。<br />
+              2026年11月1日(月)から2026年11月3日(水)まで、館内温泉のメンテナンスを実施いたします。<br
+                class="pc-only"
+              />
+              この期間中は、露天風呂・内湯ともにご利用いただけませんので、予めご了承ください。<br
+                class="pc-only"
+              />
               ご迷惑をおかけいたしますが、何卒ご理解のほどよろしくお願い申し上げます。
             </p>
           </div>
@@ -474,8 +514,8 @@
           </ul>
           <ul class="footer-menu">
             <li><a href="#">会社概要</a></li>
-            <li><a href="#">特定商取引表に基づく表記</a></li>
-            <li><a href="#">個人情報保護法</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
             <li><a href="#">キャンセルポリシー</a></li>
           </ul>
         </nav>
